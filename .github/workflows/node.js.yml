@@ -40,8 +40,9 @@ jobs:
           password: ${{ secrets.SSH_PASSWORD }}
           port: 22
           script: |
+            source ~/.bashrc
             cd ~/nodejs.org
             git pull
             kill %1
-            npm start & 
+            npm start &
 
