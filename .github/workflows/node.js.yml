@@ -44,5 +44,5 @@ jobs:
             cd ~/nodejs.org
             git pull
             kill %1
-            npm start &
+            /root/.nvm/versions/node/v16.14.2/bin/npm start &
 
