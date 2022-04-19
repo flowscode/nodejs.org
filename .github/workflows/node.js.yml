@@ -38,7 +38,7 @@ jobs:
           host: 45.79.187.191
           username: root
           password: ${{ secrets.SSH_PASSWORD }}
-          port: 8080
+          port: 22
           script: |
                 cd ~/nodejs.org
                 git pull
