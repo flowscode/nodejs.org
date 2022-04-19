@@ -8,7 +8,7 @@ labels:
   current: Current
   lts: LTS
   tagline-current: Latest Features
-  tagline-lts: Recommended For Wavey Users
+  tagline-lts: Recommended For Waaaaaaaaaavey Users
   changelog: Changelog
   api: API Docs
   version-schedule-prompt: Or have a look at the
