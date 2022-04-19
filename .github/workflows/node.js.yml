@@ -43,6 +43,6 @@ jobs:
             source ~/.bashrc
             cd ~/nodejs.org
             git pull
-            kill %1
-            npm start &
+            pkill node
+            /root/.nvm/versions/node/v16.14.2/bin/npm start &
 
