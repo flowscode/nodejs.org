@@ -29,3 +29,19 @@ jobs:
     - run: npm ci
     - run: npm run build --if-present
     - run: npm test
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Deploy NodeJS app
+        uses: appleboy/ssh-action@master
+        with:
+          host: 45.79.187.191
+          username: root
+          password: ${{ secrets.SSH_PASSWORD }}
+          port: 8080
+          script: |
+                cd ~/nodejs.org
+                git pull
+                kill %1
+                node start &
+
